@@ -81,9 +81,9 @@ options = webdriver.ChromeOptions()
 # options.add_argument('--headless')
 options.add_experimental_option('excludeSwitches', ['enable-automation'])
 
-options.binary_location = "D:\\software\\Chrome-bin\\chrome.exe"   # 这里是你指定浏览器的路径
+options.binary_location = "D:\\software\\Chrome-bin\\chrome.exe"   # 这里是您指定浏览器的路径
 browser = webdriver.Chrome(chrome_options=options)
 
-login_to_home("limantest", "!QAZ2wsx")
+login_to_home("您的主账号", "您的主账号密码")
 write_products_to_csv()
 browser.quit()
